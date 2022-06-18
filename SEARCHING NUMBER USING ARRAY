@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class array {
+     public static void main(String args[]){
+        try (var sb = new Scanner(System.in)) {
+            System.out.println("ENTER THE NUMBER OF ELEMENTS INTO THE ARRAY");
+            int size=sb.nextInt();
+            int numbers[]=new int[size];//int name=new int[];
+            System.out.println("ENTER THE NO "+size+" INTO THE ARRAY");
+            for(int i=0;i<size;i++){
+             numbers[i] =sb.nextInt();
+            }
+            System.out.println("YOU ENTERED IN ARRAY");
+            for(int i=0;i<size;i++){
+            System.out.println(numbers[i]);
+            }
+            System.out.println("ENTER THE NO X TO FIND : ");
+            int x=sb.nextInt();
+            
+            for(int i=0;i<numbers.length;i++){
+                if(numbers[i]==x){
+                    System.out.println("THE X IS PRESENT ON : "+i);
+                }
+            }
+        }
+    }
+
+        
+    }
+
